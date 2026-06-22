@@ -12,6 +12,10 @@
 - **Live demo**: https://thai-travel-guide-mu.vercel.app
 - **Repository**: https://github.com/mikedeni/thai-travel-guide
 
+## Screenshot
+
+![หน้าแรก — ชวนเที่ยวไทย พร้อมแผนที่จุดหมายปลายทางแบบโต้ตอบ](./public/screenshot-home.png)
+
 The primary content language is **Thai** (the UI sets `lang="th"` and ships the Noto Sans Thai font). Each province carries both a Thai and an English name.
 
 ---

@@ -49,6 +49,16 @@ export default async function ProvincePage({ params }: PageProps<"/province/[slu
           className="object-cover"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-black/75 via-black/30 to-transparent" />
+        {province.credit ? (
+          <a
+            href={province.credit.url}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="absolute right-0 bottom-0 z-10 bg-black/55 px-1.5 py-0.5 text-[10px] text-white/80 hover:text-white"
+          >
+            © {province.credit.author} / {province.credit.license}
+          </a>
+        ) : null}
         <div className="relative mx-auto w-full max-w-5xl px-6 py-10 text-white">
           <Badge variant="secondary" className="mb-3">
             {province.region}

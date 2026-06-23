@@ -8,6 +8,8 @@ export type Attraction = {
   nameTh: string;
   nameEn: string;
   description: string;
+  lat: number;
+  lng: number;
   image: string;
   imageAlt: string;
   credit?: Credit;
@@ -58,6 +60,8 @@ export const provinces: Province[] = [
           url: "https://commons.wikimedia.org/wiki/File:%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%9E%E0%B8%A3%E0%B8%B0%E0%B8%A8%E0%B8%A3%E0%B8%B5%E0%B8%A3%E0%B8%B1%E0%B8%95%E0%B8%99%E0%B8%A8%E0%B8%B2%E0%B8%AA%E0%B8%94%E0%B8%B2%E0%B8%A3%E0%B8%B2%E0%B8%A1_%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%9E%E0%B8%A3%E0%B8%B0%E0%B9%81%E0%B8%81%E0%B9%89%E0%B8%A7_%E0%B8%81%E0%B8%A3%E0%B8%B8%E0%B8%87%E0%B9%80%E0%B8%97%E0%B8%9E%E0%B8%A1%E0%B8%AB%E0%B8%B2%E0%B8%99%E0%B8%84%E0%B8%A3_-_Wat_Phra_Kaew,_Temple_of_Emerald_Buddha,_Bangkok,_Thailand.jpg",
         },
         imageAlt: "พระบรมมหาราชวังและวัดพระแก้ว",
+        lat: 13.7501,
+        lng: 100.492,
       },
       {
         nameTh: "วัดอรุณราชวราราม",
@@ -71,6 +75,8 @@ export const provinces: Province[] = [
           url: "https://commons.wikimedia.org/wiki/File:Templo_Wat_Arun,_Bangkok,_Tailandia,_2013-08-22,_DD_30.jpg",
         },
         imageAlt: "พระปรางค์วัดอรุณริมแม่น้ำเจ้าพระยา",
+        lat: 13.74361111,
+        lng: 100.48888889,
       },
       {
         nameTh: "วัดโพธิ์",
@@ -84,6 +90,8 @@ export const provinces: Province[] = [
           url: "https://commons.wikimedia.org/wiki/File:Wat_Pho,_Bangkok,_Tailandia,_2013-08-22,_DD_02.jpg",
         },
         imageAlt: "พระพุทธไสยาสน์ภายในวัดโพธิ์",
+        lat: 13.74638889,
+        lng: 100.49361111,
       },
       {
         nameTh: "ตลาดนัดจตุจักร",
@@ -97,6 +105,8 @@ export const provinces: Province[] = [
           url: "https://commons.wikimedia.org/wiki/File:Chatuchak_weekend_market_roofs.jpg",
         },
         imageAlt: "บรรยากาศตลาดนัดจตุจักร",
+        lat: 13.80083333,
+        lng: 100.55138889,
       },
     ],
   },
@@ -130,6 +140,8 @@ export const provinces: Province[] = [
           url: "https://commons.wikimedia.org/wiki/File:20171106_Wat_Phra_That_Doi_Suthep_0103_DxO.jpg",
         },
         imageAlt: "เจดีย์ทองวัดพระธาตุดอยสุเทพ",
+        lat: 18.80498,
+        lng: 98.92156,
       },
       {
         nameTh: "เมืองเก่าเชียงใหม่",
@@ -143,6 +155,8 @@ export const provinces: Province[] = [
           url: "https://commons.wikimedia.org/wiki/File:20171105_Wat_Chedi_Luang_Chiang_Mai_9897_DxO.jpg",
         },
         imageAlt: "วัดในเขตเมืองเก่าเชียงใหม่",
+        lat: 18.78694444,
+        lng: 98.98638889,
       },
       {
         nameTh: "ย่านนิมมานเหมินท์",
@@ -155,6 +169,8 @@ export const provinces: Province[] = [
           url: "https://commons.wikimedia.org/wiki/File:One_Nimman_View.jpg",
         },
         imageAlt: "บรรยากาศคาเฟ่ย่านนิมมานเหมินท์",
+        lat: 18.8005,
+        lng: 98.967,
       },
     ],
   },
@@ -187,6 +203,8 @@ export const provinces: Province[] = [
           url: "https://commons.wikimedia.org/wiki/File:Patong_Beach_Phuket_November_2012.jpg",
         },
         imageAlt: "หาดป่าตองยามกลางวัน",
+        lat: 7.89305556,
+        lng: 98.29833333,
       },
       {
         nameTh: "พระใหญ่เมืองภูเก็ต",
@@ -199,6 +217,8 @@ export const provinces: Province[] = [
           url: "https://commons.wikimedia.org/wiki/File:The_Big_Buddha,_Phuket.jpg",
         },
         imageAlt: "พระใหญ่สีขาวบนยอดเขาในภูเก็ต",
+        lat: 7.827598,
+        lng: 98.312853,
       },
       {
         nameTh: "หมู่เกาะพีพี",
@@ -212,6 +232,8 @@ export const provinces: Province[] = [
           url: "https://commons.wikimedia.org/wiki/File:Maya_Bay,_Koh_Phi_Phi,_Krabi,_Thailand.jpg",
         },
         imageAlt: "เรือหางยาวและอ่าวหมู่เกาะพีพี",
+        lat: 7.73333333,
+        lng: 98.76666667,
       },
     ],
   },
@@ -242,6 +264,8 @@ export const provinces: Province[] = [
           url: "https://commons.wikimedia.org/wiki/File:Railay_Beach_5.jpg",
         },
         imageAlt: "หาดไร่เลย์ล้อมรอบด้วยหน้าผา",
+        lat: 8.01055556,
+        lng: 98.83944444,
       },
       {
         nameTh: "เกาะปอดะ",
@@ -254,6 +278,8 @@ export const provinces: Province[] = [
           url: "https://commons.wikimedia.org/wiki/File:Ko_Kai_%26_Ko_Tub_12.jpg",
         },
         imageAlt: "ทะเลใสและเกาะปอดะ",
+        lat: 7.97138889,
+        lng: 98.80861111,
       },
       {
         nameTh: "สระมรกต",
@@ -267,6 +293,8 @@ export const provinces: Province[] = [
           url: "https://commons.wikimedia.org/wiki/File:Emerald_pool_park,_Krabi_province,_Thailand_2018_2.jpg",
         },
         imageAlt: "สระมรกตกลางผืนป่ากระบี่",
+        lat: 7.9242,
+        lng: 99.2667,
       },
     ],
   },
@@ -300,6 +328,8 @@ export const provinces: Province[] = [
           url: "https://commons.wikimedia.org/wiki/File:Buddha_head_in_bodhi_tree,_Wat_Mahathat.jpg",
         },
         imageAlt: "เศียรพระในรากต้นไม้ วัดมหาธาตุ",
+        lat: 14.3569,
+        lng: 100.5675,
       },
       {
         nameTh: "วัดไชยวัฒนาราม",
@@ -313,6 +343,8 @@ export const provinces: Province[] = [
           url: "https://commons.wikimedia.org/wiki/File:Timeless_of_Ayutthaya_Wat_Chaiwatthanaram.jpg",
         },
         imageAlt: "ปรางค์วัดไชยวัฒนารามริมแม่น้ำ",
+        lat: 14.34305556,
+        lng: 100.54166667,
       },
       {
         nameTh: "วัดพระศรีสรรเพชญ์",
@@ -326,6 +358,8 @@ export const provinces: Province[] = [
           url: "https://commons.wikimedia.org/wiki/File:Templo_Phra_Si_Sanphet,_Ayutthaya,_Tailandia,_2013-08-23,_DD_17.jpg",
         },
         imageAlt: "เจดีย์สามองค์วัดพระศรีสรรเพชญ์",
+        lat: 14.3558,
+        lng: 100.5583,
       },
     ],
   },
@@ -361,6 +395,8 @@ export const provinces: Province[] = [
           url: "https://commons.wikimedia.org/wiki/File:Wat_Mahathat,_Sukhothai_(I).jpg",
         },
         imageAlt: "โบราณสถานในอุทยานประวัติศาสตร์สุโขทัย",
+        lat: 17.0211,
+        lng: 99.7036,
       },
       {
         nameTh: "วัดมหาธาตุ",
@@ -375,6 +411,8 @@ export const provinces: Province[] = [
           url: "https://commons.wikimedia.org/wiki/File:Wat_Mahathat,_Sukhothai_(I).jpg",
         },
         imageAlt: "เจดีย์ทรงดอกบัวตูม วัดมหาธาตุสุโขทัย",
+        lat: 17.0206,
+        lng: 99.7029,
       },
       {
         nameTh: "วัดศรีชุม",
@@ -387,6 +425,8 @@ export const provinces: Province[] = [
           url: "https://commons.wikimedia.org/wiki/File:Hand_of_Wat_Si_Chum.jpg",
         },
         imageAlt: "พระอจนะภายในมณฑปวัดศรีชุม",
+        lat: 17.0277,
+        lng: 99.6968,
       },
     ],
   },
@@ -419,6 +459,8 @@ export const provinces: Province[] = [
           url: "https://commons.wikimedia.org/wiki/File:Chiang_Rai_-_Wat_Rong_Khun_%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%A3%E0%B9%88%E0%B8%AD%E0%B8%87%E0%B8%82%E0%B8%B8%E0%B9%88%E0%B8%99_(2026)_-_img_11.jpg",
         },
         imageAlt: "วัดร่องขุ่นสีขาวอันวิจิตร",
+        lat: 19.82466667,
+        lng: 99.76333333,
       },
       {
         nameTh: "ดอยตุง",
@@ -431,6 +473,8 @@ export const provinces: Province[] = [
           url: "https://commons.wikimedia.org/wiki/File:DoiTungGarden.JPG",
         },
         imageAlt: "สวนดอกไม้บนดอยตุง",
+        lat: 20.34583333,
+        lng: 99.83444444,
       },
       {
         nameTh: "สามเหลี่ยมทองคำ",
@@ -444,6 +488,8 @@ export const provinces: Province[] = [
           url: "https://commons.wikimedia.org/wiki/File:Sop-Ruak_Thailand_Golden-Triangle-01.jpg",
         },
         imageAlt: "แม่น้ำโขงบริเวณสามเหลี่ยมทองคำ",
+        lat: 20.35,
+        lng: 100.08333333,
       },
     ],
   },
@@ -475,6 +521,8 @@ export const provinces: Province[] = [
           url: "https://commons.wikimedia.org/wiki/File:Bridge_on_the_River_Kwai_-_tourist_plaza.JPG",
         },
         imageAlt: "สะพานข้ามแม่น้ำแคว",
+        lat: 14.0413,
+        lng: 99.5036,
       },
       {
         nameTh: "น้ำตกเอราวัณ",
@@ -487,6 +535,8 @@ export const provinces: Province[] = [
           url: "https://commons.wikimedia.org/wiki/File:Erawan_Falls_4.JPG",
         },
         imageAlt: "น้ำตกเอราวัณสีเขียวมรกต",
+        lat: 14.38333333,
+        lng: 99.11666667,
       },
       {
         nameTh: "เมืองมัลลิกา ร.ศ. 124",
@@ -500,6 +550,8 @@ export const provinces: Province[] = [
           url: "https://commons.wikimedia.org/wiki/File:Thailand_Immigration_Stamps.png",
         },
         imageAlt: "บรรยากาศเมืองมัลลิกาแบบย้อนยุค",
+        lat: 14.0186,
+        lng: 99.5895,
       },
     ],
   },
@@ -531,6 +583,8 @@ export const provinces: Province[] = [
           url: "https://commons.wikimedia.org/wiki/File:Beagle_at_Hua_Hin_beach_03.jpg",
         },
         imageAlt: "หาดหัวหินยามเช้า",
+        lat: 12.56861111,
+        lng: 99.95777778,
       },
       {
         nameTh: "อุทยานแห่งชาติเขาสามร้อยยอด",
@@ -544,6 +598,8 @@ export const provinces: Province[] = [
           url: "https://commons.wikimedia.org/wiki/File:01-%E0%B8%9E%E0%B8%A3%E0%B8%B0%E0%B8%97%E0%B8%B5%E0%B9%88%E0%B8%99%E0%B8%B1%E0%B9%88%E0%B8%87%E0%B8%84%E0%B8%B9%E0%B8%AB%E0%B8%B2%E0%B8%84%E0%B8%A4%E0%B8%AB%E0%B8%B2%E0%B8%AA%E0%B8%99%E0%B9%8C.jpg",
         },
         imageAlt: "ภูเขาหินปูนเขาสามร้อยยอด",
+        lat: 12.1825,
+        lng: 99.94833333,
       },
       {
         nameTh: "ตลาดน้ำหัวหินสามพันนาม",
@@ -557,6 +613,8 @@ export const provinces: Province[] = [
           url: "https://commons.wikimedia.org/wiki/File:Hua_Hin_Floating_Market_-_panoramio.jpg",
         },
         imageAlt: "บรรยากาศตลาดน้ำในหัวหิน",
+        lat: 12.5897,
+        lng: 99.969,
       },
     ],
   },
@@ -588,6 +646,8 @@ export const provinces: Province[] = [
           url: "https://commons.wikimedia.org/wiki/File:Koh_Samui_Lipa_Noi2.jpg",
         },
         imageAlt: "หาดทรายขาวบนเกาะสมุย",
+        lat: 9.5,
+        lng: 100,
       },
       {
         nameTh: "เขื่อนรัชชประภา",
@@ -601,6 +661,8 @@ export const provinces: Province[] = [
           url: "https://commons.wikimedia.org/wiki/File:Rajjaprabha_Dam_Reservoir_05.jpg",
         },
         imageAlt: "ทะเลสาบเขื่อนรัชชประภาและหน้าผาหินปูน",
+        lat: 8.97666667,
+        lng: 98.80444444,
       },
       {
         nameTh: "เกาะเต่า",
@@ -613,6 +675,8 @@ export const provinces: Province[] = [
           url: "https://commons.wikimedia.org/wiki/File:Hin_Tha_Toh_Ko_Tao_1.jpg",
         },
         imageAlt: "อ่าวและเรือที่เกาะเต่า",
+        lat: 10.09,
+        lng: 99.8381,
       },
     ],
   },
@@ -645,6 +709,8 @@ export const provinces: Province[] = [
           url: "https://commons.wikimedia.org/wiki/File:Khao_Yai,_Thailand,_Haew_Suwat_Waterfall,_Top.jpg",
         },
         imageAlt: "ทิวป่าเขาใหญ่",
+        lat: 14.35,
+        lng: 101.44,
       },
       {
         nameTh: "ปราสาทหินพิมาย",
@@ -658,6 +724,8 @@ export const provinces: Province[] = [
           url: "https://commons.wikimedia.org/wiki/File:Phimai_Historical_Park_Thailand_08.jpg",
         },
         imageAlt: "ปราสาทหินพิมาย",
+        lat: 15.22083333,
+        lng: 102.49388889,
       },
       {
         nameTh: "อนุสาวรีย์ท้าวสุรนารี",
@@ -671,6 +739,8 @@ export const provinces: Province[] = [
           url: "https://commons.wikimedia.org/wiki/File:Thao_Suranaree_Statue_Korat_Thailand.JPG",
         },
         imageAlt: "อนุสาวรีย์ท้าวสุรนารี",
+        lat: 14.976,
+        lng: 102.0987,
       },
     ],
   },
@@ -704,6 +774,8 @@ export const provinces: Province[] = [
           url: "https://commons.wikimedia.org/wiki/File:Pai_countryside_2,_Thailand.jpg",
         },
         imageAlt: "ทิวเขาและทุ่งนาที่ปาย",
+        lat: 19.35861111,
+        lng: 98.44,
       },
       {
         nameTh: "วัดพระธาตุดอยกองมู",
@@ -717,6 +789,8 @@ export const provinces: Province[] = [
           url: "https://commons.wikimedia.org/wiki/File:Shane_-_Phra_That_Doi_Kong_Mu_Temple.jpg",
         },
         imageAlt: "เจดีย์สีขาววัดพระธาตุดอยกองมู",
+        lat: 19.3001,
+        lng: 97.9601,
       },
       {
         nameTh: "บ้านรักไทย",
@@ -730,6 +804,8 @@ export const provinces: Province[] = [
           url: "https://commons.wikimedia.org/wiki/File:Ban_Rak_Thai_Mae_Hong_Sorn_Thailand_(125159247).jpeg",
         },
         imageAlt: "หมู่บ้านรักไทยริมทะเลสาบ",
+        lat: 19.4889,
+        lng: 98.0492,
       },
     ],
   },

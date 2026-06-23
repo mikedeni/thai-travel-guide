@@ -3,7 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { AttractionCard } from "@/components/attraction-card";
-import ProvinceMapLoader from "@/components/province-map-loader";
+import AttractionMapLoader from "@/components/attraction-map-loader";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Separator } from "@/components/ui/separator";
@@ -85,8 +85,14 @@ export default async function ProvincePage({ params }: PageProps<"/province/[slu
       </section>
 
       <section className="mx-auto w-full max-w-5xl px-6 py-10">
-        <h2 className="mb-6 text-2xl font-semibold">ตำแหน่งบนแผนที่</h2>
-        <ProvinceMapLoader provinces={[province]} center={[province.lat, province.lng]} zoom={9} />
+        <h2 className="mb-2 text-2xl font-semibold">แผนที่และเส้นทางเที่ยว</h2>
+        <p className="mb-6 text-muted-foreground">
+          จุดหมายเลขเรียงตามลำดับการเที่ยว เส้นสีแดงคือเส้นทางเชื่อมแต่ละจุด
+        </p>
+        <AttractionMapLoader
+          attractions={province.attractions}
+          center={[province.lat, province.lng]}
+        />
       </section>
 
       <section className="mx-auto w-full max-w-5xl px-6 pb-16">
